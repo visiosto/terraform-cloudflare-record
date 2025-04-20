@@ -1,0 +1,37 @@
+variable "content" {
+  description = "The content of the DNS record."
+  type        = string
+}
+
+variable "name" {
+  description = "The name of the DNS record to create."
+  type        = string
+}
+
+variable "priority" {
+  description = "The priority of the DNS record, if it is an MX record."
+  type        = number
+  default     = 0
+}
+
+variable "proxied" {
+  description = "Whether the DNS record should be proxied through Cloudflare."
+  type        = bool
+  default     = false
+}
+
+variable "ttl" {
+  description = "The time to live (TTL) for the DNS record."
+  type        = number
+  default     = 1
+}
+
+variable "type" {
+  description = "The type of the DNS record."
+  type        = string
+}
+
+variable "zone_name" {
+  description = "The name of the zone to create the DNS record in."
+  type        = string
+}

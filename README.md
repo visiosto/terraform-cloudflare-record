@@ -28,15 +28,15 @@ No modules.
 
 ## Inputs
 
-| Name     | Description                                           | Type     | Default | Required |
-| -------- | ----------------------------------------------------- | -------- | ------- | :------: |
-| content  | The content of the DNS record                         | `string` | `""`    |   yes    |
-| name     | The name of the DNS record to create                  | `string` | `""`    |   yes    |
-| priority | The priority of the DNS record, if it is an MX record | `number` | `0`     |    no    |
-| proxied  | Whether the record is proxied through Cloudflare      | `bool`   | `false` |    no    |
-| ttl      | The TTL of the DNS record                             | `number` | `1`     |    no    |
-| type     | The type of the DNS record to create                  | `string` | `""`    |   yes    |
-| zone_id  | The ID of the zone to create the DNS record in        | `string` | `""`    |   yes    |
+| Name      | Description                                           | Type     | Default | Required |
+| --------- | ----------------------------------------------------- | -------- | ------- | :------: |
+| content   | The content of the DNS record                         | `string` | `""`    |   yes    |
+| name      | The name of the DNS record to create                  | `string` | `""`    |   yes    |
+| priority  | The priority of the DNS record, if it is an MX record | `number` | `0`     |    no    |
+| proxied   | Whether the record is proxied through Cloudflare      | `bool`   | `false` |    no    |
+| ttl       | The TTL of the DNS record                             | `number` | `1`     |    no    |
+| type      | The type of the DNS record to create                  | `string` | `""`    |   yes    |
+| zone_name | The name of the zone to create the DNS record in      | `string` | `""`    |   yes    |
 
 ## Outputs
 

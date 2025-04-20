@@ -1,2 +1,43 @@
-# terraform-cloudflare-record
-Terraform module to create Cloudflare DNS records
+# Cloudflare DNS record Terraform module
+
+Terraform module to create Cloudflare DNS records.
+
+## Requirements
+
+| Name                  | Version  |
+| --------------------- | -------- |
+| terraform             | >= 1.0.0 |
+| cloudflare/cloudflare | >= 5.0.0 |
+
+## Providers
+
+| Name                  | Version  |
+| --------------------- | -------- |
+| cloudflare/cloudflare | >= 5.0.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name                    | Type     |
+| ----------------------- | -------- |
+| cloudflare_zone.current | data     |
+| cloudflare_record.this  | resource |
+
+## Inputs
+
+| Name     | Description                                           | Type     | Default | Required |
+| -------- | ----------------------------------------------------- | -------- | ------- | :------: |
+| content  | The content of the DNS record                         | `string` | `""`    |   yes    |
+| name     | The name of the DNS record to create                  | `string` | `""`    |   yes    |
+| priority | The priority of the DNS record, if it is an MX record | `number` | `0`     |    no    |
+| proxied  | Whether the record is proxied through Cloudflare      | `bool`   | `false` |    no    |
+| ttl      | The TTL of the DNS record                             | `number` | `1`     |    no    |
+| type     | The type of the DNS record to create                  | `string` | `""`    |   yes    |
+| zone_id  | The ID of the zone to create the DNS record in        | `string` | `""`    |   yes    |
+
+## Outputs
+
+No outputs.

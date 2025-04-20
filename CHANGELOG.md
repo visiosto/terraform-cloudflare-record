@@ -6,11 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2025-04-20
+
+### Fixed
+
+- Wrong input variable name for `zone_name` in the README file.
+
 ## [0.1.0] - 2025-04-20
 
 - Initial release of the module for creating Cloudflare records.
 
 [unreleased]:
-  htps://github.com/visiosto/terraform-cloudflare-record/compare/v0.1.0...HEAD
+  htps://github.com/visiosto/terraform-cloudflare-record/compare/v0.1.1...HEAD
+[0.1.1]:
+  htps://github.com/visiosto/terraform-cloudflare-record/compare/v0.1.0...v0.1.1
 [0.1.0]:
   https://github.com/visiosto/terraform-cloudflare-record/releases/tag/v0.1.0

@@ -12,6 +12,8 @@ and this project adheres to
 
 - Type validation for the `type` input variable with the supported types being
   `A`, `AAAA`, `CNAME`, `MX`, and `TXT`.
+- Validation for the `ttl` input variable to ensure it is a positive integer.
+  Also, ensure it is set to one day at the maximum.
 
 ### Changed
 

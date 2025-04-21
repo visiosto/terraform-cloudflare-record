@@ -24,6 +24,10 @@ variable "ttl" {
   description = "The time to live (TTL) for the DNS record."
   type        = number
   default     = 1
+  validation {
+    condition     = var.ttl >= 1 && var.ttl <= 86400
+    error_message = "TTL must be between 1 and 86400 seconds."
+  }
 }
 
 variable "type" {

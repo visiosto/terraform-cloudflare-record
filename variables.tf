@@ -29,6 +29,10 @@ variable "ttl" {
 variable "type" {
   description = "The type of the DNS record."
   type        = string
+  validation {
+    condition     = contains(["A", "AAAA", "CNAME", "TXT", "MX"], var.type)
+    error_message = "Invalid DNS record type specified."
+  }
 }
 
 variable "zone_name" {

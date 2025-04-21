@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [unreleased]
 
+### Added
+
+- Type validation for the `type` input variable with the supported types being
+  `A`, `AAAA`, `CNAME`, `MX`, and `TXT`.
+
 ### Changed
 
 - Minimum required Terraform version to 1.0.0.

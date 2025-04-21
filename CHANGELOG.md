@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [unreleased]
 
+### Changed
+
+- Minimum required Terraform version to 1.0.0.
+
 ### Removed
 
 - Automatic quoting of `TXT` records.

@@ -23,6 +23,10 @@ and this project adheres to
 
 - Automatic quoting of `TXT` records.
 
+### Fixed
+
+- Changelog link for `v0.1.1`.
+
 ## [0.1.1] - 2025-04-20
 
 ### Fixed
@@ -34,8 +38,8 @@ and this project adheres to
 - Initial release of the module for creating Cloudflare records.
 
 [unreleased]:
-  htps://github.com/visiosto/terraform-cloudflare-record/compare/v0.1.1...HEAD
+  https://github.com/visiosto/terraform-cloudflare-record/compare/v0.1.1...HEAD
 [0.1.1]:
-  htps://github.com/visiosto/terraform-cloudflare-record/compare/v0.1.0...v0.1.1
+  https://github.com/visiosto/terraform-cloudflare-record/compare/v0.1.0...v0.1.1
 [0.1.0]:
   https://github.com/visiosto/terraform-cloudflare-record/releases/tag/v0.1.0

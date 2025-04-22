@@ -1,6 +1,11 @@
 variable "content" {
   description = "The content of the DNS record."
   type        = string
+
+  validation {
+    condition     = length(var.content) > 0
+    error_message = "The contents of the DNS record cannot be empty."
+  }
 }
 
 variable "name" {

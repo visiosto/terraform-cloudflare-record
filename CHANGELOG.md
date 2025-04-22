@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [unreleased]
 
+### Added
+
+- Validate that the name of the record (`name`) is not empty.
+
 ## [0.2.1] - 2025-04-21
 
 ### Fixed

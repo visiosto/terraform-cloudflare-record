@@ -4,8 +4,12 @@ data "cloudflare_zone" "current" {
   }
 }
 
+locals {
+  record_name = var.name == "@" ? data.cloudflare_zone.current.name : format("%s.%s", var.name, data.cloudflare_zone.current.name)
+}
+
 resource "cloudflare_dns_record" "this" {
-  name     = var.name
+  name     = local.record_name
   ttl      = var.ttl
   type     = var.type
   zone_id  = data.cloudflare_zone.current.zone_id

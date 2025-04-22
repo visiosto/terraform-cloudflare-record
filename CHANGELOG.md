@@ -11,6 +11,12 @@ and this project adheres to
 ### Added
 
 - Validate that the name of the record (`name`) is not empty.
+- Validate that the `priority` input variable is greater than `0` when the
+  record type is `MX`.
+
+### Changed
+
+- **BREAKING**: Update minimum required Terraform version to `1.9.0`.
 
 ## [0.2.1] - 2025-04-21
 

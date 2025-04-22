@@ -59,4 +59,9 @@ variable "type" {
 variable "zone_name" {
   description = "The name of the zone to create the DNS record in."
   type        = string
+
+  validation {
+    condition     = length(var.zone_name) > 0
+    error_message = "The name of the DNS zone cannot be empty."
+  }
 }

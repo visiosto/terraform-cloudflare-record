@@ -12,9 +12,11 @@ and this project adheres to
 
 - **BREAKING**: Validate that the record name (`name`) does not end with the DNS
   zone name or a dot.
+- Validate that the `content` input variable is not empty.
 - Validate that the name of the record (`name`) is not empty.
 - Validate that the `priority` input variable is greater than `0` when the
   record type is `MX`.
+- Validate that the `zone_name` input variable is not empty.
 
 ### Changed
 

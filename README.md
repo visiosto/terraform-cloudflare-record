@@ -6,7 +6,7 @@ Terraform module to create Cloudflare DNS records.
 
 | Name                  | Version  |
 | --------------------- | -------- |
-| terraform             | >= 1.9.0 |
+| terraform             | >= 1.2.0 |
 | cloudflare/cloudflare | >= 5.0.0 |
 
 ## Providers

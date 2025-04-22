@@ -22,11 +22,6 @@ variable "priority" {
   description = "The priority of the DNS record, if it is an MX record."
   type        = number
   default     = 0
-
-  validation {
-    condition     = var.type != "MX" || var.priority > 0
-    error_message = "Priority must be greater than 0 for MX records."
-  }
 }
 
 variable "proxied" {

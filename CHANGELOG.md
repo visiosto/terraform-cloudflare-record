@@ -10,6 +10,9 @@ and this project adheres to
 
 ### Added
 
+- **BREAKING**: Modify the final DNS record name so that it always ends with the
+  name of the DNS zone so that it matches the value used by the Cloudflare
+  provider.
 - **BREAKING**: Validate that the record name (`name`) does not end with the DNS
   zone name or a dot.
 - Validate that the `content` input variable is not empty.

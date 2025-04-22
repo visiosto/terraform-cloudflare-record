@@ -6,6 +6,10 @@ variable "content" {
 variable "name" {
   description = "The name of the DNS record to create."
   type        = string
+  validation {
+    condition     = length(var.name) > 0
+    error_message = "The name of the DNS record cannot be empty."
+  }
 }
 
 variable "priority" {

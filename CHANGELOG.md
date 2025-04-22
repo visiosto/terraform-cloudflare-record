@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.1] - 2025-04-22
+
+### Fixed
+
+- Fix Terraform version in the documentation.
+
 ## [0.3.0] - 2025-04-22
 
 ### Added
@@ -64,7 +70,9 @@ and this project adheres to
 - Initial release of the module for creating Cloudflare records.
 
 [unreleased]:
-  https://github.com/visiosto/terraform-cloudflare-record/compare/v0.3.0...HEAD
+  https://github.com/visiosto/terraform-cloudflare-record/compare/v0.3.1...HEAD
+[0.3.1]:
+  https://github.com/visiosto/terraform-cloudflare-record/compare/v0.3.0...v0.3.1
 [0.3.0]:
   https://github.com/visiosto/terraform-cloudflare-record/compare/v0.2.1...v0.3.0
 [0.2.1]:
